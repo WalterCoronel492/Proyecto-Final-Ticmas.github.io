@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+button{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: white;
+}
+
+button a{
+    color: black;
+    text-decoration: none;  
+}
+
+
+/**------------------ CONTENIDO -------------------------------------------*/
+.contenido{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/**-------------- COLUMNA IZQUIERDA -----------------------------------------------*/
+.contenido .columna_izquierda{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+    .perfil{                        /** PERFIL PERSONAL */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid grey;
+    }
+
+    .perfil .imagen{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .perfil .imagen img{
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .perfil h1{
+       color: white;
+       font-size: 1.5em;
+       margin-top: 20px;
+       text-transform: uppercase;
+       text-align: center;
+       font-weight: 600;
+       letter-spacing: 1px;
+       line-height: 1.4em;
+    }
+
+    .perfil h3{
+        color: white;
+        text-align: center;
+        font-weight: 200;  
+    }
+
+
+
+    .contacto{                      /** INFORMACIÓN DE CONTACTO */
+        padding-top: 40px;
+    }
+
+    .titulo{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-right: 20px;
+    }
+
+    .contacto ul{
+        position: relative;    
+    }
+
+    .contacto ul li{
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+    }
+
+   .contacto ul li .icono{
+        display: inline-block;
+        width: 30px;
+        font-size: 20px;
+        color: #03a9f4;
+    }
+
+    .contacto ul li span{
+        color: white;
+        font-weight: 300;
+      }
+
+
+
+    .contacto.educacion li{                      /** EDUCACIÓN */
+        margin-bottom: 15px;
+    }
+
+    .contacto.educacion h5{
+        color: #03a9f4;
+        font-weight: 500;    
+    }
+
+    .contacto.educacion h3{
+        color: white;
+        font-weight: 600;    
+    }
+
+    .contacto.educacion h4{
+        color: white;
+        font-weight: 300;    
+    }
+
+
+
+    .contacto.lenguajes .porcentaje{                      /** LENGUAJES */
+        position: relative;
+        width: 100%;
+        height: 12px;
+        background-color: black;
+        border-radius: 16px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .contacto.lenguajes .porcentaje div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #03a9f4;
+            border-radius: 16px;
+        }
+
+
+
+/**---------- COLUMNA DERECHA ---------------------------------------------------*/
+
+.contenido .columna_derecha{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+
+    .acerca_de_mi{                        /** ACERCA DE MI */
+        margin-bottom: 50px;
+    }
+
+    .acerca_de_mi:last-child{
+        margin-bottom: 0;
+    }
+
+    .titulo2{
+        color: #003147;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .acerca_de_mi.experiencia .caja{                        /** EXPERIENCIA LABORAL */
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
+
+    .acerca_de_mi.experiencia .caja .año_lugar{
+        min-width: 150px
+    }
+
+    .acerca_de_mi.experiencia .caja .año_lugar h5{
+        text-transform: uppercase;
+        color: black;
+        font-weight: 600;
+    }
+
+    .acerca_de_mi.experiencia .caja .texto h4{
+        text-transform: uppercase;
+        color: #03a9f4;
+        font-size: 16px;
+    }
+
+
+
+    .acerca_de_mi.habilidades .caja{                        /** HABILIDADES PROFESIONALES */
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acerca_de_mi.habilidades .caja h4{
+        text-transform: uppercase;
+        color: black;
+        font-weight: 600;   
+    }
+
+    .acerca_de_mi.habilidades .caja .porcentaje{
+        position: relative;
+        width: 100%; 
+        height: 12px;
+        border-radius: 16px;
+        background-color: grey;
+    }
+
+    .acerca_de_mi.habilidades .caja .porcentaje div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #03a9f4;
+        border-radius: 16px;
+    }
+
+
+/**--------------RESPONSIVE-----------------------------------------------*/
+
+@media only screen and (max-width: 600px){
+    body{background-color: #00b386;}
+}
+
+
+@media (max-width: 1000px){
+    .contenido{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 600px){
+    .acerca_de_mi.experiencia .caja{
+        flex-direction: column;
+    }
+    .acerca_de_mi.experiencia .año_lugar{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .acerca_de_mi.habilidades .caja{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
