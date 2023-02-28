@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web - Coronel Walter</title>
+
+    <!--Icono de la pestaña-->
+    <link rel="icon" type="image/x-icon" href="img/icono.ico">
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!--Fuente de texto-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/77460b390b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!----------------------------------------------------------------------------------->
+    
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/menu.svg" alt="">
+        
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#experto">Experto</a>
+            <a href="cv.html">Curriculum Vitae</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+
+        <div class="contenedor head">
+            <h1 class="titulo">Proyecto Final - Página Web</h1>
+            <p class="texto">Página web responsive, que posee un Curriculum Vitae, aplicando todos los conocimientos aprendidos.</p>
+        </div>       
+    </header>
+<!----------------------------------------------------------------------------------->
+    <main>
+
+        <section class="services contenedor" id="servicio">     <!-- Servicios -->
+            <h2 class="subtitulo">Mis Servicios</h2>
+            <div class="contenedor-servicio">
+                <img src="img/servicios.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="servicio">
+                        <h3 class="n-servicio"><span class="numero">1</span>Diseño web</h3>
+                        <p>Diseños web con una muy buena usabilidad y apariencia visual que un sitio web necesita. Variedad de habilidades creativas, gráficas y técnicas.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3 class="n-servicio"><span class="numero">2</span>Reparacion de PC</h3>
+                        <p>Técnico en Soporte, Mantenimiento, Instalacióm y funcionamiento a equipos de cómputo aplicando normas y especificaciones técnicas.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3 class="n-servicio"><span class="numero">3</span>Programación</h3>
+                        <p>Elaboración y optimización de software informático, así como tambien adaptación para su uso en distintas plataformas y sistemas operativos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria" id="galeria">      <!-- Galeria -->
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/arduino.jpg" class="img-galeria" alt="Electronica">
+                    <img src="img/pc.jpg" class="img-galeria" alt="Informatica">
+                    <img src="img/codigo.jpg" class="img-galeria" alt="Programación">
+                </div>
+            </div>
+        </section>
+
+        <div class="imagen-light">                            <!-- Galeria Light -->
+            <img src="img/cerrar.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+
+        <section class="contenedor" id="experto">     <!-- Experto -->
+            <h2 class="subtitulo">Experto en</h2>
+            <section class="experto">
+                <div class="contenedor-experto">
+                    <img src="img/codificacion.svg" alt="">
+                    <h3 class="n-experto">Codificación</h3>  
+                </div>
+                <div class="contenedor-experto">
+                    <img src="img/analista.svg" alt="">
+                    <h3 class="n-experto">Analisis</h3>  
+                </div>
+                <div class="contenedor-experto">
+                    <img src="img/diseñador.svg" alt="">
+                    <h3 class="n-experto">Diseño</h3>  
+                </div>
+            </section>
+        </section>
+
+    </main>
+<!----------------------------------------------------------------------------------->      
+    <footer id="footer">
+        <div class="contenedor footer-contenedor">
+
+            <div class="realizado">
+                <h2 class="marca">Proyecto Final - Ticmas</h2>
+                <p>&copy; 2023 <b>Coronel Walter</b> - Todos los Derechos reservados</p>
+            </div>
+      
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/Walter.Coronel.05/" target="blank" class="redes-sociales-iconos">
+                    <i class="fa-brands fa-facebook"></i>  
+                </a>
+                <a href="https://www.instagram.com/walter._.coronel/?next=%2F&hl=es-la" target="blank" class="redes-sociales-iconos">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/Walter23687936" target="blank" class="redes-sociales-iconos">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/walter-coronel-315209265" target="blank" class="redes-sociales-iconos">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="linea"></div>
+
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+
+</body>
+</html>
